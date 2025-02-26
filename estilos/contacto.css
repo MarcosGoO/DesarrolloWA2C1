@@ -1,0 +1,55 @@
+/* Estilos específicos para la página de contacto */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* pantallas medianas */
+@media (max-width: 992px) {
+    .contact-image {
+        max-width: 75%;
+    }
+}
+
+/*  pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px 0;
+        min-height: auto;
+    }
+    
+    .contact-image {
+        max-width: 90%;
+    }
+}
+
+/* pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 15px 0;
+    }
+    
+    .contact-image {
+        max-width: 95%;
+    }
+}
